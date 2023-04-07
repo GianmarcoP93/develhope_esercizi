@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1>Create new account</h1>
+      <h2>I am a new customer</h2>
+      <form>
+        <label for="firstname">Name:</label>
+        <input type="type" name="firstname" id="firstname" placeholder="Giuseppe">
+        <br><br>
+        <label for="secondname">Second name:</label>
+        <input type="type" name="secondname" id="secondname" placeholder="Rossi">
+        <br><br>
+        <label for="email">Email:</label> 
+        <input type="email" name="email" id="email" placeholder="GiuseppeRossi@gmail.com">
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" placeholder="*********">
+        <br><br>
+        <label for="telephonenumber">Telephone number:</label>
+        <input type="tel" name="telephonenumber" id="telephonenumber" placeholder="+39">
+        <br><br>
+        <label for="plans">Choose ur plan:</label>
+        <select name="plans" id="plans">
+          <option value="opt1">Free</option>
+          <option value="opt2">Beginner (5.99€)</option>
+          <option value="opt3">Medium (10.99€) </option>
+          <option value="opt1">Premium (19.99€)</option>
+        </select>
+        <br><br>
+        <label name="planpro" id="" style="display: inline-block;">Plan pro (29.99€)</label>
+        <input type="checkbox" name="planpro" id="planpro" value="plan pro">
+        <br><br>
+        <label for="creditcard">Credit card number:</label>
+        <input type="type" name="creditcard" id="creditcard" maxlength="16" placeholder="0123 4567 8901 2345">
+        <br><br>
+        <label for="cvc">CVC:</label>
+        <input type="text" name="cvc" id="cvc" maxlength="3" placeholder="123">
+        <br><br>
+        <label for="expirationdate">Expiration date:</label>
+        <input type="date" name="expirationdate" id="expirationdate">
+        <br><br>
+        <label for="billingaddress">Billing Address:</label>
+        <input type="text" name="billingaddress" id="billingaddress" placeholder="Via Roma 18">
+        <br><br><br>
+        <input type="checkbox" name="terms" id="terms" value="terms">
+        <label name="terms" id="" style="display: inline-block;"> I have read and understood the <a href="https://google.com">terms and conditions.</a></label>
+        <br><br><br>
+      </form>
+      <button type="submit">Sign in!</button>
+    </div>
+  </body>
+  
+</html>
