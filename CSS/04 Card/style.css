@@ -1,0 +1,53 @@
+:root {
+  --bordercard: 1px solid rgb(150, 150, 150);
+  --borderradiuscard: 10px;
+}
+
+.card {
+  border: var(--bordercard);
+  height: auto;
+  width: 33ch;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--borderradiuscard);
+}
+
+img {
+  width: 100%;
+  border-top-left-radius: var(--borderradiuscard);
+  border-top-right-radius: var(--borderradiuscard);
+}
+
+.card .bodycard .firsttextcard {
+  padding-bottom: 15px;
+  border-bottom: var(--bordercard);
+}
+
+.card .bodycard p,
+.textcard {
+  border-bottom: var(--bordercard);
+}
+
+.card p,
+.cardlink {
+  padding-left: 15px;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.cardlink {
+  display: flex;
+}
+
+.cardlink a {
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cardtitle {
+  padding-top: 10px;
+  padding-left: 15px;
+  margin: 0;
+}
