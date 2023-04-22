@@ -1,0 +1,32 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "firstsection secondsection thirdsection"
+    "footer footer thirdsection";
+}
+
+#green {
+  grid-area: header;
+}
+
+#yellow {
+  grid-area: firstsection;
+}
+
+#red {
+  grid-area: secondsection;
+}
+
+#blue {
+  grid-area: thirdsection;
+}
+
+#orange {
+  grid-area: footer;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+}
