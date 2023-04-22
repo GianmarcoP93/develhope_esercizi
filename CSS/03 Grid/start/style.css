@@ -1,0 +1,68 @@
+:root {
+  --fontsize: 50px;
+}
+
+.calculator {
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(6, 100px);
+  display: grid;
+}
+
+.calculator > div {
+  border: 0.3px solid black;
+}
+
+.result {
+  grid-column: span 4;
+  grid-row: span 1;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: rgb(51, 51, 51);
+  font-size: var(--fontsize);
+  padding-right: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.singlespace {
+  grid-column: span 1;
+  grid-row: span 1;
+  font-size: var(--fontsize);
+  background-color: rgb(253, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.singlespace0 {
+  grid-column: span 1;
+  grid-row: span 1;
+  font-size: var(--fontsize);
+  background-color: rgb(253, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 15px;
+}
+
+.singlespacecalc {
+  background-color: rgb(221, 244, 253);
+  grid-column: span 1;
+  grid-row: span 1;
+  font-size: var(--fontsize);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calcresult {
+  grid-column: span 1;
+  grid-row: span 4;
+  font-size: var(--fontsize);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 15px;
+  background-color: rgb(245, 91, 116);
+}
