@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
+:root {
+  --card-gap: 30px;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -16,7 +20,7 @@ main .cardwrapper {
   /* height: 480px; */
   width: 100%;
   max-width: 1500px;
-  gap: 30px;
+  gap: var(--card-gap);
 }
 
 .card {
@@ -119,24 +123,22 @@ main .cardwrapper {
 /* tablet */
 @media screen and (max-width: 768px) {
   main .cardwrapper {
-    /* display: flex; */
-    /* flex-direction: row; */
     flex-wrap: wrap;
     justify-content: flex-start;
   }
   .card {
-    max-width: 45%;
+    width: calc(50% - var(--card-gap));
   }
 }
 
 /* mobile */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 560px) {
   main .cardwrapper {
     flex-direction: column;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    align-items: center;
   }
-
   .card {
-    max-width: 100%;
+    width: 100%;
   }
 }
