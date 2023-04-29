@@ -15,7 +15,7 @@ div {
   h1 {
     @include article-card(green, $font-size: to-rem(24));
     text-align: center;
-    text-decoration: underline blue to-rem(0.5);
+    border-bottom: 1px blue;
   }
   h2 {
     @extend h1;
