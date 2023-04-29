@@ -42,6 +42,35 @@ div {
       @include article-card(red, green);
     }
   }
+  section:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    div {
+      border: 1px solid red;
+      height: to-rem(45);
+      width: to-rem(45);
+      text-align: left;
+    }
+
+    @for $index from 1 through 3 {
+      div.fs-#{$index}rem {
+        font-size: $index + rem;
+      }
+
+      // $index: 1;
+      // @while $index < 10 {
+      //   div.fs-#{$index}rem {
+      //     background-color: darken($color: rgb(255, 255, 255), $amount: 20);
+      //   }
+      //   $index: $index + 1;
+      // }
+    }
+    @for $index from 1 through 19 {
+      div.fs-#{$index}rem {
+        background-color: darken($color: rgb(255, 255, 255), $amount: 20);
+      }
+    }
+  }
 
   section:last-of-type {
     article {

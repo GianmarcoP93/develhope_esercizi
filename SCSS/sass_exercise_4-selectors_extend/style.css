@@ -15,8 +15,8 @@ div h2 {
   padding: 1rem;
   border: 1px solid red;
   text-decoration: none;
-  margin-left: 800px;
-  margin-right: 800px;
+  width: 268px;
+  margin-inline: auto;
 }
 div section {
   display: flex;
