@@ -9,7 +9,7 @@ div h1 {
   border-color: blue;
   font-size: 1.5rem;
   text-align: center;
-  text-decoration: underline blue 0.03125pxrem;
+  text-decoration: underline blue 0.03125rem;
 }
 div section {
   display: flex;
