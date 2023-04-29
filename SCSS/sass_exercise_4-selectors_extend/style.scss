@@ -1,0 +1,55 @@
+@mixin article-card($color: red, $border-color: blue, $font-size: 1rem) {
+  color: $color;
+  border-color: $border-color;
+  font-size: $font-size;
+}
+
+@function to-rem($value) {
+  @return #{$value / 16}rem;
+}
+
+div {
+  @include article-card();
+  border: to-rem(1) solid;
+
+  h1 {
+    @include article-card(green, $font-size: to-rem(24));
+    text-align: center;
+    text-decoration: underline blue to-rem(0.5);
+  }
+  h2 {
+    @extend h1;
+    padding: 1rem;
+    border: 1px solid red;
+    text-decoration: none;
+    margin-left: 800px;
+    margin-right: 800px;
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: to-rem(10);
+    article {
+      @include article-card(green);
+      border: to-rem(1) solid;
+      padding: to-rem(15);
+    }
+    article:nth-child(odd) {
+      @include article-card(blue, green);
+    }
+    article:nth-child(even) {
+      @include article-card(red, green);
+    }
+  }
+
+  section:last-of-type {
+    article {
+      @include article-card($border-color: blue);
+      flex-grow: 1;
+      p {
+        @include article-card(green, $font-size: to-rem(24));
+      }
+    }
+  }
+}
