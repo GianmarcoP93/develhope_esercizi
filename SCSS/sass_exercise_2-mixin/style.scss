@@ -38,7 +38,7 @@ div {
       @include article-card($border-color: blue);
       flex-grow: 1;
       p {
-        @include article-card(green);
+        @include article-card(green, $font-size: 24px);
       }
     }
   }

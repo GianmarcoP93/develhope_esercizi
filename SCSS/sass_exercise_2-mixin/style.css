@@ -43,7 +43,7 @@ div section:last-of-type article {
 div section:last-of-type article p {
   color: green;
   border-color: blue;
-  font-size: 1rem;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
