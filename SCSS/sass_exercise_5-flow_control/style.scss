@@ -56,18 +56,23 @@ div {
       div.fs-#{$index}rem {
         font-size: $index + rem;
       }
-
-      // $index: 1;
-      // @while $index < 10 {
-      //   div.fs-#{$index}rem {
-      //     background-color: darken($color: rgb(255, 255, 255), $amount: 20);
-      //   }
-      //   $index: $index + 1;
-      // }
     }
-    @for $index from 1 through 19 {
-      div.fs-#{$index}rem {
-        background-color: darken($color: rgb(255, 255, 255), $amount: 20);
+  }
+
+  $bg-color: white;
+  $color: black;
+  @for $i from 1 through 19 {
+    $bg-color: darken($bg-color, 5%);
+    $color: lighten($color, 5%);
+    @if ($i == 10) {
+      section > div:nth-child(10) {
+        background-color: blue;
+        color: red;
+      }
+    } @else {
+      section > div:nth-child(#{$i}) {
+        background-color: $bg-color;
+        color: $color;
       }
     }
   }
