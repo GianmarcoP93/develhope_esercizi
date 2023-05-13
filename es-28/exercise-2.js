@@ -9,6 +9,6 @@ if (
   console.log("City is required");
 }
 
-const city = order.city?.address;
-
-console.log(city);
+if (!order?.customer?.address?.city) {
+  console.log("City is required");
+}
