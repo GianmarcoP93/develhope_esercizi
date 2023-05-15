@@ -24,7 +24,7 @@ class AreaCalculator {
     } else if (form instanceof Rectangle) {
       return form.width * form.height;
     } else if (form instanceof Circle) {
-      return 2 * Math.PI * form.radius;
+      return form.radius ** 2 * Math.PI;
     }
   }
 }
