@@ -1,6 +1,14 @@
 function uncompletedNotes(notes) {
-  const uncompleted = [];
-  notes.forEach(notes.filter((done) => done == false));
+  let uncompleted = [];
+
+  notes.forEach((element) => {
+    uncompleted.push(
+      element.todos.filter((a) => {
+        return a.done === false;
+      })
+    );
+  });
+  return uncompleted;
 }
 
 const notes = [
@@ -54,3 +62,4 @@ const notes = [
 ];
 
 uncompletedNotes(notes);
+console.log(uncompletedNotes(notes));
