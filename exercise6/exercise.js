@@ -1,6 +1,6 @@
 const $container = document.querySelector("#container");
 
-state = {
+const state = {
   post: [],
 };
 
