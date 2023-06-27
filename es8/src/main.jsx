@@ -1,4 +1,4 @@
 import ReactDOM from "react-dom/client";
-import { Counter } from "./es12";
+import { App } from "./App";
 
-ReactDOM.createRoot(document.getElementById("root")).render(<Counter />);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
