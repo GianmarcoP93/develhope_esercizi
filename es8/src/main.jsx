@@ -1,6 +1,4 @@
 import ReactDOM from "react-dom/client";
-import { Welcome } from "./es11";
+import { Counter } from "./es12";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <Welcome name="Gianmarco" age="29" />
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<Counter />);
